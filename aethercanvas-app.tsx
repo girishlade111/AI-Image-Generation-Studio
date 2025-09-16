@@ -122,7 +122,9 @@ const AetherCanvas = () => {
     setStyleWeights(newWeights);
   };
 
-  const filteredGallery = gallery.filter(image => {
+  const allImages = [...mockImages, ...gallery];
+
+  const filteredGallery = allImages.filter(image => {
     const matchesSearch = searchQuery === '' || 
       image.prompt.toLowerCase().includes(searchQuery.toLowerCase()) ||
       (image.style && image.style.toLowerCase().includes(searchQuery.toLowerCase()));
@@ -594,7 +596,7 @@ const AetherCanvas = () => {
 
             {/* Gallery Grid */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {[...mockImages, ...filteredGallery].map(image => (
+              {filteredGallery.map(image => (
                 <div key={image.id} className="group relative">
                   <img
                     src={image.url}
@@ -626,7 +628,7 @@ const AetherCanvas = () => {
               ))}
             </div>
 
-            {filteredGallery.length === 0 && mockImages.length === 0 && (
+            {filteredGallery.length === 0 && (
               <div className="text-center py-12">
                 <Grid className="w-16 h-16 mx-auto text-gray-400 mb-4" />
                 <p className="text-gray-500">No images found</p>

@@ -1,0 +1,37 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "AI Image Generation Studio Live preview: https://claude.ai/public/artifacts/6997798c-156d-41f5-b7cf-6b86652d6709",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/girishlade111/AI-Image-Generation-Studio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/girishlade111/AI-Image-Generation-Studio/issues"
+  },
+  "homepage": "https://github.com/girishlade111/AI-Image-Generation-Studio#readme",
+  "dependencies": {
+    "lucide-react": "^0.544.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.4",
+    "@babel/preset-env": "^7.28.3",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
+    "@testing-library/jest-dom": "^6.8.0",
+    "@testing-library/react": "^16.3.0",
+    "babel-jest": "^30.1.2",
+    "jest": "^30.1.2",
+    "jest-environment-jsdom": "^30.1.2"
+  }
+}
