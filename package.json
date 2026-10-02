@@ -4,7 +4,9 @@
   "description": "AI Image Generation Studio Live preview: https://claude.ai/public/artifacts/6997798c-156d-41f5-b7cf-6b86652d6709",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -32,6 +34,8 @@
     "@testing-library/react": "^16.3.0",
     "babel-jest": "^30.1.2",
     "jest": "^30.1.2",
-    "jest-environment-jsdom": "^30.1.2"
+    "jest-environment-jsdom": "^30.1.2",
+    "vite": "^6.3.5",
+    "@vitejs/plugin-react": "^4.4.1"
   }
 }
